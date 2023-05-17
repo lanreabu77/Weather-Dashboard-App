@@ -21,7 +21,7 @@ const searchHandler = (event) => {
 // Ap calls to get current weather data
 
 function search(city) {
-    var requestUrl = `http://api.openweathermap.org/geo/1.0/direct?q=` + city + "&limit=&appid=" + apikey;
+    var requestUrl = `https://api.openweathermap.org/geo/1.0/direct?q=` + city + "&limit=&appid=" + apikey;
 
     fetch(requestUrl)
         .then((response) => {
