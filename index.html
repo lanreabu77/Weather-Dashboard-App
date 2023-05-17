@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="assets/css/reset.css" /> -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    
+</head>
+
+<body>
+
+    <header id="pageHeader">
+       <strong>
+            <h1 class="text-center">Weather Dashboard<p>&#x26C5;</p></h1>
+        </strong>
+
+    </header>
+    <div>
+        <p id="Subinfo">An App to help you plan better for the weather</p>
+    </div>
+    <main id="pageMain">
+
+        <aside id="searchArea">
+
+            <form id="searchForm">
+                <label for="citySearch">
+                    <h2 id="searchText">Search For a City:</h2>
+                </label>
+                <input type="text" name="citySearch" id="citySearch" placeholder="City...">
+                <span id="searchBtnSpan"><button type="submit" class="myBtns" id="fetchBtn">Search</button>
+                    <button class="myBtns" id="clearBtn">Clear</button></span>
+            </form>
+
+            <div id="searchHistory"></div>
+
+        </aside>
+
+        <section id="Actualweather">
+
+            <section id="current">
+                <div id="cityDiv"><span id="currentCity"></span><img id="currentIcon" src=""></div>
+                <p>Temp:<span id="currentTemp"></span></p>
+                <p>Wind Speed:<span id="currentWind"></span></p>
+                <p>Humidity:<span id="currentHumidity"></span></p>
+                <p>UV Index:<span id="currentUV"></span></p>
+            </section>
+
+            <section id="forecast">
+                <div class="cityforecast" id="day1">
+                    <div class="dateDiv"><span class="futureDate"></span></div>
+                    <!-- <img src="" class="futureIcon"> -->
+                    <p>Temp:<span class="futureTemp"></span></p>
+                    <!-- <p>Wind:<span class="futureWind"></span></p> -->
+                    <p>Humidity:<span class="futureHumidity"></span></p>
+                </div>
+
+                <div class="cityforecast" id="day2">
+                    <div class="dateDiv"><span class="futureDate"></span></div>
+                    <!-- <img src="" class="futureIcon"> -->
+                    <p>Temp:<span class="futureTemp"></span></p>
+                    <!-- <p>Wind:<span class="futureWind"></span></p> -->
+                    <p>Humidity:<span class="futureHumidity"></span></p>
+                </div>
+
+                <div class="cityforecast" id="day3">
+                    <div class="dateDiv"><span class="futureDate"></span></div>
+                    <!-- <img src="" class="futureIcon"> -->
+                    <p>Temp:<span class="futureTemp"></span></p>
+                    <!-- <p>Wind:<span class="futureWind"></span></p> -->
+                    <p>Humidity:<span class="futureHumidity"></span></p>
+                </div>
+
+                <div class="cityforecast" id="day4">
+                    <div class="dateDiv"><span class="futureDate"></span></div>
+                    <!-- <img src="" class="futureIcon"> -->
+                    <p>Temp:<span class="futureTemp"></span></p>
+                    <!-- <p>Wind:<span class="futureWind"></span></p> -->
+                    <p>Humidity:<span class="futureHumidity"></span></p>
+                </div>
+
+                <div class="cityforecast" id="day5">
+                    <div class="dateDiv"><span class="futureDate"></span></div>
+                    <!-- <img src="" class="futureIcon"> -->
+                    <p>Temp:<span class="futureTemp"></span></p>
+                    <!-- <p>Wind:<span class="futureWind"></span></p> -->
+                    <p>Humidity:<span class="futureHumidity"></span></p>
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+    <footer id="pageFooter">
+
+        <h4>&copy; Lanre Abu 2023</h4>
+    
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="assets/script.js"></script>
+
+</body>
+
+</html>
